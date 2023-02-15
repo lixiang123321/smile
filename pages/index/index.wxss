@@ -1,25 +1,38 @@
-Page {
-  /* text-align: center; */
-}
 
-image {
+.card {
+  margin: 10px;
+  position: relative; /* 相对定位，其中的子布局必须配合用 */
+}
+/* 后代选择器：card里面的image才生效 */
+.bg {
   width: 100%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #5f687e;/* x y 宽度 颜色 */
 }
 
-.commet {
-  text-align: center;
-  font-size: 14px;
-  color: #999;
+.logo {
+  width: 80px;
+  position: absolute; /* 绝对定位，配合父布局使用 */
+  top: 10px;
+  right: 20px;
 }
 
-.body {
-  padding: 30px;
-  line-height: 2;
+.info {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  font-size: 10px;
+  color: #5f687e;
 }
 
-.title {
-  font-size: 20px;
+.main {
   font-weight: bold;
-  padding-top: 10px;
-  padding-bottom: 10px;
+}
+
+.desc {
+  margin-bottom: 10px;
+}
+
+.mail {
+
 }

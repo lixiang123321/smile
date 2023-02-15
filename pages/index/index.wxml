@@ -1,4 +1,11 @@
-<view class='title'>Hello {{wording}}!</view>
-<image mode="widthFix"
-  src='../../pics/laughing/0001.jpg'></image>
-<button bindtap="onClick">点击</button>
+<image mode="widthFix" src='../../pics/laughing/0001.jpg'></image>
+<view class='commet'>图片注解</view>
+<view class='body'>
+  <view class='title'>微笑是什么</view>
+  <view>微笑是善良、友好、赞美的象征。是对他人的理解，关系和爱的表达。是礼貌修养的表现。是积极乐观的生活情趣。微笑的内涵博大而富有感染力。</view>
+  <view>恰到好处的微笑可以把紧张气氛缓和，可以消除降低客户的不满，可以适当的弥补工作中带来的失误。</view>
+  <view>
+    鲁迅的一句名句“相逢一笑泯恩仇”就是表达了一笑克刚，表现了微笑的独特魅力。</view>
+  <view>微笑可以从内心深处打动顾客，使交际商务活动愉悦的进行，给客人热情款待的良好印象。</view>
+  <view>尤其是商务人员在工作中和各种活动中一定要面带微笑，诚挚的接待客户，让脸上，嘴上，眼睛和声音里都充满笑声。</view>
+</view>

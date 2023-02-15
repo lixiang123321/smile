@@ -1,13 +1,25 @@
 Page {
+  /* text-align: center; */
+}
+
+image {
+  width: 100%;
+}
+
+.commet {
   text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+
+.body {
+  padding: 30px;
+  line-height: 2;
 }
 
 .title {
-  color: red;
-}
-
-
-.img {
-  margin-top: 200rpx; /* 没起作用 */
-
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

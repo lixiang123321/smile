@@ -1,13 +1,38 @@
-Page {
-  text-align: center;
+
+.card {
+  margin: 10px;
+  position: relative; /* 相对定位，其中的子布局必须配合用 */
+}
+/* 后代选择器：card里面的image才生效 */
+.bg {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #5f687e;/* x y 宽度 颜色 */
 }
 
-.title {
-  color: red;
+.logo {
+  width: 80px;
+  position: absolute; /* 绝对定位，配合父布局使用 */
+  top: 10px;
+  right: 20px;
 }
 
+.info {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  font-size: 10px;
+  color: #5f687e;
+}
 
-.img {
-  margin-top: 200rpx; /* 没起作用 */
+.main {
+  font-weight: bold;
+}
+
+.desc {
+  margin-bottom: 10px;
+}
+
+.mail {
 
 }

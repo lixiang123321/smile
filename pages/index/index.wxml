@@ -1,4 +1,11 @@
-<view class='title'>Hello {{wording}}!</view>
-<image mode="widthFix"
-  src='../../pics/laughing/0001.jpg'></image>
-<button bindtap="onClick">点击</button>
+<view class='card'>
+  <image class='bg' src="../../pics/0004.jpg" mode="widthFix"></image>
+  <image class='logo' src="../../pics/0007.jpg" mode="widthFix"></image>
+
+  <view class="info">
+    <view class="main">微笑小程序</view>
+    <view class='desc'>关注你的快乐</view>
+    <view class='mail'>smile@smile.com</view>
+  </view>
+  
+</view>

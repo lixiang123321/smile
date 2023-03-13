@@ -14,6 +14,8 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    total: 0, //总计数器
+    smile: 0 //微笑计数器
   }
 })

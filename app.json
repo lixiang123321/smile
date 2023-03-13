@@ -1,6 +1,6 @@
 {
   "pages":[
-    "pages/index/index",
+    "pages/pic_flow/index",
     "pages/logs/logs"
   ],
   "window":{
@@ -10,5 +10,9 @@
     "navigationBarTextStyle":"black"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  // "usingComponents": {
+  //   "me-waterfall": "./lib/waterfall/index",
+  //   "me-waterfall-item": "./lib/waterfall-item/index"
+  // }
 }

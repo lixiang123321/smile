@@ -1,0 +1,10 @@
+<view class="container">
+  <water-flow columns="{{columns}}" list="{{photos}}" bind:linwaterflowtap="onTap">
+    <block wx:for="{{item}}" wx:key="index">
+      <view class="card" data-index="{{index}}">
+        <image src="{{item.src}}" mode="aspectFill"></image>
+        <text>{{item.tag}}</text>
+      </view>
+    </block>
+  </water-flow>
+</view>

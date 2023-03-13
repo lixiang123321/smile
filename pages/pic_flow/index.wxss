@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  width: 100%;
+  margin-bottom: 10rpx;
+}
+
+.card image {
+  width: 100%;
+}
+
+.card text {
+  text-align: center;
+}

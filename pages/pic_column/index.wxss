@@ -1,0 +1,13 @@
+Page {
+  text-align: center;
+}
+
+.title {
+  color: red;
+}
+
+
+.img {
+  margin-top: 200rpx; /* 没起作用 */
+
+}

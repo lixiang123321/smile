@@ -1,0 +1,9 @@
+<scroll-view scroll-y="true" style="height: 100%;">
+  <view class="container">
+    <view class="row" wx:for="{{rows}}" wx:key="index">
+      <view class="column" wx:for="{{item}}" wx:key="index">
+        <image src="{{smile_folder + '/' + item}}" mode="aspectFit" style="width: 100%; height: 300rpx;"></image>
+      </view>
+    </view>
+  </view>
+</scroll-view>

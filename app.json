@@ -11,8 +11,8 @@
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
-  // "usingComponents": {
-  //   "me-waterfall": "./lib/waterfall/index",
-  //   "me-waterfall-item": "./lib/waterfall-item/index"
-  // }
+  "usingComponents": {
+    "me-waterfall": "./lib/waterfall/index",
+    "me-waterfall-item": "./lib/waterfall-item/index"
+  }
 }

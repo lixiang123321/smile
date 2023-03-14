@@ -1,14 +1,9 @@
-<!-- <view class="container">
-  <water-flow columns="{{columns}}" list="{{photos}}" bind:linwaterflowtap="onTap">
-    <block wx:for="{{item}}" wx:key="index">
-      <view class="card" data-index="{{index}}">
-        <image src="{{item.src}}" mode="aspectFill"></image>
-        <text>{{item.tag}}</text>
-      </view>
-    </block>
-  </water-flow>
-</view> -->
-<view hidden="{{isShowDetail}}">
+<view class="status-bar">
+  <text>Total Clicks: {{total}}</text>
+  <text>Smiling Clicks: {{smile}}</text>
+</view>
+
+<view>
   <me-waterfall column='2' gap='4' hidden="{{true}}">
     <me-waterfall-item wx:for="{{list}}" wx:key="index" data-item="{{item}}" bindtap="onTap">
         <image src="{{item.src}}"
@@ -17,6 +12,6 @@
   </me-waterfall>
 </view>
 
-<image src="{{detailSrc}}" hidden="{{!isShowDetail}}"
-          bindtap="onDetailTap"
-          style="width: 99vw; height: 132vw;"/>
+<view wx:if="{{isShowDetail}}" class="fullscreen-image" bindtap="onDetailTap">
+  <image src="{{detailSrc}}" mode="aspectFit"></image>
+</view>

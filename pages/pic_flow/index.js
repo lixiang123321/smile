@@ -44,7 +44,8 @@ Page({
   },
   isShowDetail: false,
   detailSrc: '',
-  shuffle: function(arr) {
+  shuffle: function(arr) { // shuffle会改变arr本身
+    // 
     let len = arr.length;
     for (let i = 0; i < len - 1; i++) {
       let j = Math.floor(Math.random() * (len - i));
@@ -56,11 +57,30 @@ Page({
   },
   onLoad: function() {
     // 将所有图片随机排列，以便瀑布流展示
-    const randomizedPics = this.shuffle(pics)
-    this.setData({ list: randomizedPics })
+    //this.shuffle(pics) // pics 变了？确实变了
+    //this.setData({ list: pics}) 
+
+    // 注意array是指针概念
+    //var randomizedPics = this.shuffle(pics) // randomizedPics -> pics
+    //this.setData({ list: randomizedPics }) // list -> pics
+    
+    this.onReachBottom() // 为什么这里用统一的上拉，就可以；如果是先加载了一点点就不行？
+    //console.log(this.data.list == pics)
   },
-  onReachBottom: function() {
-    this.onLoad()
+  onReachBottom() { 
+    wx.showLoading({
+      title: '加载更多',
+    })
+
+    var randomizedPics = this.shuffle(pics) // pics变了，list变了
+    // console.log(this.data.list)
+    // console.log(typeof this.data.list) // object
+    randomizedPics = this.data.list.concat(randomizedPics)
+    // concat是新的数组 list !-> pics
+    this.setData({list: randomizedPics}) // setData才会到界面
+    console.log(this.data.list);
+
+    wx.hideLoading()
   },
   onTap(e) { 
     // console.log(e);

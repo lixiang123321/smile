@@ -4,10 +4,12 @@
 </view>
 
 <view>
-  <me-waterfall column='2' gap='4' hidden="{{true}}">
+  <me-waterfall column='2' gap='0' hidden="{{true}}">
     <me-waterfall-item wx:for="{{list}}" wx:key="index" data-item="{{item}}" bindtap="onTap">
-        <image src="{{item.src}}"
-          style="width: 48vw; height: 64vw;"/>
+        <image src="{{item.src}}" mode="widthFix"
+          style="width: 49vw"/>
+          <!-- 在这个控件上 mode aspectFill: 结果左右很整齐 -->
+          <!-- mode widthFix: 结果左右错落有致，就是加载新的时候，可能有较大空白 -->
     </me-waterfall-item>
   </me-waterfall>
 </view>

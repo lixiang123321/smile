@@ -1,0 +1,6 @@
+<view class="container">
+  <!-- <image class="smile" src="../pic_flow/new_pics/smile/001.jpg" mode="widthFix"></image> -->
+    <!-- <text class="text-title">微笑的意义</text> -->
+    <text class="text-content">微笑不仅仅是一种面部表情，更是一种情感传递，它能够让人感受到快乐、友好、亲切和安心。微笑可以化解紧张和敌对情绪，缓解身心压力，让人变得更加自信和积极。因此，让我们在生活中多微笑，让微笑成为我们传递情感和交流的桥梁。</text>
+  <button class="button" bindtap="goToOther">开始微笑吧</button>
+</view>
